@@ -1,0 +1,398 @@
+body,html,ul,li{
+    width:100%;height:auto;
+    padding:0;margin:0;
+    list-style:none;
+    font-family:"微软雅黑";
+    color:#000;
+}
+body,html{
+    background:#f8f8f8;
+}
+a{
+    text-decoration:none;
+    color:#000;
+}
+/*头部*/
+.header{
+        width:100%;
+        height:150px;
+        overflow:hidden;
+    }
+    /*logo*/
+    .header .logo{
+            width:100%;height:100px;
+            line-height:100px;
+            padding:0 70px;
+            box-sizing:border-box;
+        }
+        .header .logo ul{
+            width:300px;
+            height:100%;
+            float:left;
+        }
+        .header .logo ul img{
+            width:100%;
+            height:75%;
+            margin-top:10px;
+        }
+        .header .logo .user{
+            width:300px;
+            height:100%;
+            float:right;
+        }
+        .header .logo .user li{
+           width:100%;height:50%;line-height:50px;
+        }
+        .header .logo .user li .welcome,.header .logo .user li .login{
+            width:100%;height:100%;
+        }
+        .header .logo .user li .welcome div{
+            width:33.333%;height:100%;
+            float:left;text-align:center;
+        }
+        .header .logo .user li .welcome .gouwuche:hover{
+            font-size:18px;color:cornflowerblue;
+        }
+        .header .logo .user li .login div{
+            width:50%;height:100%;
+            float:left;
+        }
+        .header .logo .user li .welcome div span:last-child{
+            font-size:18px;color:orange;
+        }
+        .header .logo .user li .welcome div:last-child:hover{
+            font-size:18px;color:red;
+        }
+        .header .logo .user li .login div a:hover{
+            font-size:18px;color:cornflowerblue;
+        }
+        .header .logo .user li:last-child a{
+            color:#494949;
+        }
+        .header .logo .user li:last-child a:hover{
+            font-size:20px;color:cornflowerblue;
+        }
+    /*导航栏*/
+    .header .nav{
+            width:100%;
+            height:50px;background:#000;
+        }
+        .header .nav ul{
+            width:80%;height:100%;margin:0 auto;
+            line-height:50px;text-align:center;
+        }
+        .header .nav ul li{
+            width:16.666%;height:100%;line-height:60px;
+            color:#fff;text-align:center;float:left;
+        }
+        .header .nav ul li a{
+            display:block;
+            width:75%;height:100%;color:#fff;
+            margin:0 auto;font-size:18px;line-height:50px;
+        }
+        .header .nav ul li .active{
+            background:#fff;
+            color:#000;
+        }
+        .header .nav ul li a:hover{
+            background:#fff;
+            color:#000;
+        }
+/*==============================首页================================================        */
+/*banner*/
+.banner{
+        width:100%;
+        height:450px;
+        background-image:url("../img/banner.jpg");
+        background-repeat:no-repeat;
+        background-position:50% 50%;
+}
+/*主体部分*/
+.contain{
+        width:1000px;height:auto;margin:0 auto;
+        overflow:hidden;
+    }
+    .contain .con{
+        width:100%;height:auto;
+        background:#fff;
+        margin-top:20px;
+    }
+    .contain .con .title{
+        width:100%;height:80px;
+    }
+    .contain .con .title1{
+        background:url("../img/title1.png") bottom no-repeat;
+    }
+    .contain .con .title2{
+        background:url("../img/title2.png") bottom no-repeat;
+    }
+    .contain .con .title3{
+        background:url("../img/title3.png") bottom no-repeat;
+    }
+    .contain .con ul{
+        width:980px;
+        height:220px;
+        margin:0 auto;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    .contain .con ul li{
+        width:237px;
+        height:100%;
+        margin-right:10px;
+        box-sizing:border-box;
+        float:left;
+        position:relative;
+    }
+    .contain .con ul li:last-child{
+        margin-right:0;
+    }
+    .contain .con ul li img{
+        width:100%;height:100%;
+    }
+    .contain .con ul li .zhezhao{
+        width:100%;height:100%;
+        position:absolute;
+        left:0;top:0;
+        background:rgba(0,0,0,0.5);
+    }
+    .contain .con ul li .zhezhao div{
+        background:none;
+        color:#fff;
+        font-size:12px;
+        text-align:center;
+    }
+    .contain .con ul li .zhezhao .title{
+        font-size:14px;
+        margin-top:30px;
+    }
+    /*爱宠聚焦*/
+    .contain .con .co{
+            width:100%;
+            height:341px;
+            padding:20px;
+            overflow:hidden;
+        }
+        .contain .con .co .left{
+            width:340px;
+            height:341px;
+            float:left;
+        }
+        .contain .con .co .left img{
+            width:100%;
+            height:100%;
+        }
+        .contain .con .co .right{
+            width:640px;
+            height:341px;
+            float:right;
+        }
+        .contain .con .co .right ul{
+            width:100%;
+            height:30.33%;
+            border-bottom:1px dashed #000;
+        }
+        .contain .con .co .right ul:last-child{
+            border:0;
+        }
+        .contain .con .co .right ul li{
+            width:100%;height:auto;
+            margin-top:8px;
+        }
+        .contain .con .co .right ul .title{
+            font-size:18px;
+            color:#161616;
+        }
+        .contain .con .co .right ul .title a span{
+            width:50%;
+            float:left;
+        }
+        .contain .con .co .right ul .title a:hover{
+            font-size:16px;
+            color:deepskyblue;
+        }
+        .contain .con .co .right ul .neirong{
+            font-size:16px;
+            color:#797979;
+        }
+/*底部部分*/
+.bottom{
+    width:100%;
+    height:100px;
+    background:#000;
+    margin-top:20px;
+}
+.bottom .con{
+    width:80%;
+    height:100%;
+    margin:0 auto;
+    overflow:hidden;
+}
+.bottom .con ul{
+    width:50%;
+    height:100%;
+    float:left;
+}
+.bottom .con ul li{
+    width:100%;
+    height:25%;
+    line-height:25px;
+    font-size:14px;
+    color:#797979;
+}
+.bottom .con .right{
+    float:right;
+}
+.bottom .con .right li a{
+    width:100%;
+    height:100%;
+    line-height:100px;
+    font-size:16px;
+    color:#797979;
+}
+.bottom .con .right li span a:hover{
+    color:cornflowerblue;
+}
+/*=========================================宠物品种========================================================*/
+.banner1{
+    width:100%;
+    height:300px;
+}
+.banner1 img{
+    width:100%;height:100%;
+}
+.contain_pinzhong .con .title{
+    width:100%;height:40px;
+    background:none;
+    line-height:40px;
+    text-align:left;
+    font-size:20px;
+    color:#000;
+    padding-left:15px;
+}
+/*=========================================宠物用品=====================================================*/
+.contain3{
+    width:1030px;
+    height:820px;
+    background:#fff;
+    margin:0 auto;
+}
+.contain3 ul{
+    float:left;
+    width:250px;
+    height:400px;
+    margin-top:10px;
+    margin-right:10px;
+    border-bottom:1px dashed #000;
+    box-sizing:border-box;
+}
+.contain3 .teshu{
+    margin-right:0;
+}
+.contain3 li{
+    width:100%;height:33px;
+    line-height:33px;text-align:center;
+    color:#756041;
+    font-size:20px;font-weight:bold;
+    margin-top:5px;
+}
+
+.contain3 .img{
+    width:100%;
+    height:260px;
+}
+.contain3 .img img{
+    width:100%;height:100%;
+}
+.contain3 .prize{
+    color:#d38200;
+}
+.contain3 .gouwuche{
+    color:#fff;
+    background:#d38200;
+    border-radius:8px;
+}
+.contain3 .gouwuche:hover{
+    background:cornflowerblue;
+}
+/*=================================宠物护理================================================*/
+.contain4{
+    width:1300px;
+    height:500px;
+    background:#fff;
+    margin:0 auto;
+    margin-top:20px;
+    padding-left:30px;
+    padding-right:30px;
+    box-sizing:border-box;
+}
+.contain4 .left,.contain4 .right{
+    width:600px;
+    height:100%;
+    float:left;
+}
+.contain4 .right{
+    float:right;
+}
+.contain4 .left li{
+   float:left;
+   width:260px; height:230px;
+   margin-right:40px;
+   margin-top:20px;
+}
+.contain4 .left li .img{
+    width:280px;
+    height:180px;
+}
+.contain4 .left li .img img{
+    width:100%;height:100%;
+}
+.contain4 .left li .title{
+    width:100%;
+    height:50px;
+    line-height:50px;
+    text-align:center;
+    font-size:18px;
+    color:#494949;
+}
+.contain4 .right a{
+    display:block;
+    width:100%;
+    height:10%;
+    border-bottom:1px dashed #494949;
+    line-height:50px;
+    box-sizing:border-box;
+    color:#494949;
+}
+.contain4 .right a span{
+    float:left;
+}
+.contain4 .right a span:last-child{
+    float:right;
+}
+.contain4 .right a:hover{
+    color:#d38200;
+}
+/*=======================联系我们==============================*/
+.contain_liannxi{
+    width:1000px;
+    height:500px;
+    margin:0 auto;
+    background:#fff;
+    padding:10px;
+}
+.contain_liannxi div{
+    color:#494949;
+    line-height:20px;
+    text-align:left;
+    font-size:18px;
+}
+.contain_liannxi .title{
+    font-size:20px;
+    font-weight:bold;
+    line-height:30px;
+    margin-top:10px;
+}
+
+
+

@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>爱上宠物_管理员</title>
+    <script src="js/jquery-3.1.0.js"></script>
+    <style>
+          body,html{
+              width:100%;height:100%;
+              background:#f8f8f8;
+              margin:0;padding:0;
+              color:#000;
+          }
+          ul,li{
+              list-style:none;
+          }
+          /*头部*/
+          .header{
+                  width:100%;
+                  height:130px;
+                  background:#ccc;
+                  border-bottom:1px solid #000;
+              }
+              .header .welcome{
+                  width:100%;
+                  height:100px;
+                  font-size:30px;
+                  line-height:100px;
+                  text-align:center;
+              }
+              .header .tuichu{
+                  display: block;;
+                  width:100%;
+                  height:30px;
+                  font-size:16px;
+                  line-height:30px;
+                  text-align:center;
+                  text-decoration:none;
+                  color:#000;
+              }
+              .header .tuichu:hover{
+                  color:red;
+              }
+          /*主体*/
+          .contain{
+              width:100%;
+              height:800px;
+          }
+          /*左部*/
+         .contain .left{
+                 width:300px;
+                 height:100%;
+                 background:#ccc;
+                 border-right:1px solid #000;
+                 float:left;
+             }
+              .contain .left div{
+                  width:100%;
+                  height:50px;
+                  line-height:50px;
+                  text-align:center;
+                  border-bottom:1px dashed #000;
+              }
+              .contain .left .active{
+                  background:cornflowerblue;
+              }
+              .contain .left div:hover{
+                  background:cornflowerblue;
+              }
+          /*右部*/
+          .contain .right{
+                  width:1100px;
+                  height:100%;
+                  float:left;
+                  /*background:green;*/
+                  padding:20px;
+                  box-sizing:border-box;
+              }
+              /*查看用户*/
+              .right1 ul{
+                      width:100%;
+                      height:50px;
+                      /*background:green;*/
+                      padding:0;margin:0;
+                      border:1px solid #000000;
+                  }
+                  .right1 ul li{
+                      width:25%;
+                      height:100%;
+                      float:left;
+                      border-right:1px solid #000;
+                      line-height:50px;
+                      box-sizing:border-box;
+                      position:relative;
+                      padding-left:3px;
+                  }
+                  .right1 ul li .del{
+                      position:absolute;
+                      left:0;right:0;top:0;bottom:0;margin:auto;
+                      width:100px;
+                      height:40px;
+                      background:red;
+                      text-align:center;
+                      line-height:40px;
+                      border-radius:8px;
+                      color:#fff;
+                  }
+              /*宠物美容*/
+                  /*查看文章*/
+                  .right2 .title2{
+                      width:200px;
+                      height:50px;
+                      border:1px solid #000;line-height:50px;
+                      box-sizing:border-box;
+                      padding:0;
+                  }
+                  .right2 .title2 li{
+                     width:50%;height:100%;
+                     text-align:center;line-height:50px;
+                     border-right:1px dashed #000;
+                     box-sizing:border-box;
+                     float:left;
+                  }
+                  .right2 .title2 li:last-child{
+                      border:0;
+                  }
+                  .right2 .title2 .active{
+                      background:cornflowerblue;
+                  }
+                  .right2 .chakan0{
+                      width:100%;height:auto;
+                      border:1px solid #000;
+                  }
+                  .right2 .chakan0 .con{
+                       width:100%;
+                       height:50px;
+                       border-bottom:1px dashed #000;
+                       line-height:50px;
+                       padding:0;margin:0;
+                  }
+                  .right2 .chakan0 .con:last-child{border:0;}
+                  .right2 .chakan0 .con li{
+                      width:50%;
+                      height:100%;
+                      border-right:1px solid #000;
+                      float:left;
+                      box-sizing:border-box;
+                      text-align:center;
+                      position:relative;
+                  }
+                  .right2 .chakan0 .con li:last-child{
+                      border:0;
+                  }
+                  .right2 .chakan0 .con li .del{
+                      width:100px;
+                      height:30px;
+                      background:red;
+                      line-height:30px;
+                      text-align:center;color:#fff;
+                      margin-top:12px;
+                      border-radius:7px;
+                      position:absolute;
+                      left:0;right:0;top:0;bottom:0;margin:auto;
+                  }
+                   /*添加文章*/
+                   .right2 .tianjia li .add{
+                       width:100px;
+                       height:30px;
+                       background:cornflowerblue;
+                       line-height:30px;
+                       text-align:center;color:#fff;
+                       margin-top:12px;
+                       border-radius:7px;
+                   }
+              /*购物信息*/
+              .right3 ul li{
+                  width:25%;
+                  height:auto;
+                  border:1px solid #000;
+                  float:left;
+                  display:block;;
+                  box-sizing:border-box;
+              }
+              .right3 ul li div{
+                  width:100%;
+                  height:30px;
+                  line-height:30px;
+                  text-align:left;
+                  text-align:center;
+              }
+    </style>
+</head>
+<body>
+<!--头部-->
+      <div class="header">
+          <div class="welcome">
+              <span>欢迎您,</span>
+              <span style="color:#d38200;">XXXX</span>
+          </div>
+          <a class="tuichu" href="login/login_guanliyuan.html">退出登陆</a>
+      </div>
+<!--内容部分-->
+   <div class="contain">
+        <div class="left">
+             <div class="active">查看用户</div>
+             <div>宠物美容</div>
+             <div>购物信息</div>
+        </div>
+        <!--查看用户-->
+        <div class="right right1">
+            <iframe src="gly_chakan.html" frameborder="0" style="width:100%;height:100%"></iframe>
+        </div>
+        <!--宠物美容-->
+        <div class="right right2" style="display:none;">
+            <iframe src="gly_wenzhang.html" frameborder="0" style="width:100%;height:100%"></iframe>
+               <!--<div style="font-size:30px;text-align:center;color:cornflowerblue;">宠物美容</div>-->
+               <!--<ul class="title2">-->
+                   <!--<li class="active">查看文章</li>-->
+                   <!--<li>填加文章</li>-->
+               <!--</ul>-->
+               <!--&lt;!&ndash;查看文章 &ndash;&gt;-->
+               <!--<div class="chakan chakan0">-->
+                    <!--<ul class="con">-->
+                        <!--<li>-->
+                            <!--<span>文章标题：</span>-->
+                            <!--<span>2222</span>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<div class="del">删除</div>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                    <!--<ul class="con">-->
+                        <!--<li>-->
+                            <!--<span>文章标题：</span>-->
+                            <!--<span>2222</span>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<div class="del">删除</div>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                    <!--<ul class="con">-->
+                        <!--<li>-->
+                            <!--<span>文章标题：</span>-->
+                            <!--<span>2222</span>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<div class="del">删除</div>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+               <!--</div>-->
+               <!--&lt;!&ndash;添加文章 &ndash;&gt;-->
+               <!--<div class="chakan tianjia" style="display:none;">-->
+                    <!--<ul class="con">-->
+                        <!--<li>-->
+                            <!--<span>文章标题：</span><br/>-->
+                            <!--<span>-->
+                                 <!--<textarea name="" cols="60" rows="4"></textarea>-->
+                            <!--</span>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<span>摘要：</span><br/>-->
+                            <!--<span>-->
+                                <!--<textarea name="" id="" cols="60" rows="4"></textarea>-->
+                            <!--</span>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<span>正文：</span><br/>-->
+                            <!--<span>-->
+                                <!--<textarea name="" id="" cols="60" rows="4"></textarea>-->
+                            <!--</span>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<div class="add">确定</div>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+               <!--</div>-->
+       </div>
+       <!--购物信息-->
+       <div class="right right3" style="display:none;" style="background:red;">
+           <iframe src="gly_gouwu.html" frameborder="0" style="width:100%;height:100%"></iframe>
+       </div>
+   </div>
+</body>
+<script>
+    //左边选项卡：
+    $(".contain .left div").click(function(){
+        var index=$(this).index();
+        //左
+        $(".contain .left div").removeClass("active");
+        $(".contain .left div").eq(index).addClass("active");
+        //右
+        $(".contain .right").hide();
+        $(".contain .right").eq(index).show();
+    });
+    //查看文章／添加文章：
+    $(".right2 .title2 li").click(function(){
+        var index=$(this).index();
+        $(".right2 .title2 li").removeClass("active");
+        $(".right2 .title2 li").eq(index).addClass("active");
+        $(".right2 .chakan").hide();
+        $(".right2 .chakan").eq(index).show();
+    });
+</script>
+</html>

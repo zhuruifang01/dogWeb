@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.1.0.js"></script>
+    <style>
+        body,html{
+            width:100%;height:100%;
+            background:#f8f8f8;
+            margin:0;padding:0;
+            color:#000;
+        }
+        ul,li{
+            list-style:none;
+        }
+        /*头部*/
+        .header{
+            width:100%;
+            height:130px;
+            background:#ccc;
+            border-bottom:1px solid #000;
+        }
+        .header .welcome{
+            width:100%;
+            height:100px;
+            font-size:30px;
+            line-height:100px;
+            text-align:center;
+        }
+        .header .tuichu{
+            display: block;;
+            width:100%;
+            height:30px;
+            font-size:16px;
+            line-height:30px;
+            text-align:center;
+            text-decoration:none;
+            color:#000;
+        }
+        .header .tuichu:hover{
+            color:red;
+        }
+        /*主体*/
+        .contain{
+            width:100%;
+            height:800px;
+        }
+        /*左部*/
+        .contain .left{
+            width:300px;
+            height:100%;
+            background:#ccc;
+            border-right:1px solid #000;
+            float:left;
+        }
+        .contain .left div{
+            width:100%;
+            height:50px;
+            line-height:50px;
+            text-align:center;
+            border-bottom:1px dashed #000;
+        }
+        .contain .left .active{
+            background:cornflowerblue;
+        }
+        .contain .left div:hover{
+            background:cornflowerblue;
+        }
+        /*右部*/
+        .contain .right{
+            width:1000px;
+            height:100%;
+            float:left;
+            /*background:green;*/
+            padding:20px;
+            box-sizing:border-box;
+        }
+
+        /*宠物美容*/
+        /*查看文章*/
+        .title2{
+            width:200px;
+            height:50px;
+            border:1px solid #000;line-height:50px;
+            box-sizing:border-box;
+            padding:0;
+        }
+        .title2 li{
+            width:50%;height:100%;
+            text-align:center;line-height:50px;
+            border-right:1px dashed #000;
+            box-sizing:border-box;
+            float:left;
+        }
+        .title2 li:last-child{
+            border:0;
+        }
+        .title2 .active{
+            background:cornflowerblue;
+        }
+        .chakan0{
+            width:98%;height:auto;
+            border:1px solid #000;
+        }
+        .chakan0 .con{
+            width:100%;
+            height:50px;
+            border-bottom:1px dashed #000;
+            line-height:50px;
+            padding:0;margin:0;
+        }
+        .chakan0 .con:last-child{border:0;}
+        .chakan0 .con li{
+            width:50%;
+            height:100%;
+            border-right:1px solid #000;
+            float:left;
+            box-sizing:border-box;
+            text-align:center;
+            position:relative;
+        }
+        .chakan0 .con li:last-child{
+            border:0;
+        }
+        .chakan0 .con li .del{
+            width:100px;
+            height:30px;
+            background:red;
+            line-height:30px;
+            text-align:center;color:#fff;
+            margin-top:12px;
+            border-radius:7px;
+            position:absolute;
+            left:0;right:0;top:0;bottom:0;margin:auto;
+        }
+        /*添加文章*/
+        .right2 .tianjia li .add{
+            width:100px;
+            height:30px;
+            background:cornflowerblue;
+            line-height:30px;
+            text-align:center;color:#fff;
+            margin-top:12px;
+            border-radius:7px;
+        }
+        /*购物信息*/
+        .right3 ul li{
+            width:25%;
+            height:auto;
+            border:1px solid #000;
+            float:left;
+            display:block;;
+            box-sizing:border-box;
+        }
+        .right3 ul li div{
+            width:100%;
+            height:30px;
+            line-height:30px;
+            text-align:left;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+        <div style="font-size:30px;text-align:center;color:cornflowerblue;">宠物美容</div>
+        <ul class="title2">
+            <li class="active">查看文章</li>
+            <li>填加文章</li>
+        </ul>
+        <!--查看文章 -->
+        <div class="chakan chakan0">
+            <ul class="con">
+                <li>
+                    <span>文章标题：</span>
+                    <span>2222</span>
+                </li>
+                <li>
+                    <div class="del">删除</div>
+                </li>
+            </ul>
+            <ul class="con">
+                <li>
+                    <span>文章标题：</span>
+                    <span>2222</span>
+                </li>
+                <li>
+                    <div class="del">删除</div>
+                </li>
+            </ul>
+            <ul class="con">
+                <li>
+                    <span>文章标题：</span>
+                    <span>2222</span>
+                </li>
+                <li>
+                    <div class="del">删除</div>
+                </li>
+            </ul>
+        </div>
+        <!--添加文章 -->
+        <div class="chakan tianjia" style="display:none;">
+            <ul class="con">
+            <li>
+            <span>文章标题：</span><br/>
+            <span>
+            <textarea name="" cols="60" rows="4"></textarea>
+            </span>
+            </li>
+            <li>
+            <span>摘要：</span><br/>
+            <span>
+            <textarea name="" id="" cols="60" rows="4"></textarea>
+            </span>
+            </li>
+            <li>
+            <span>正文：</span><br/>
+            <span>
+            <textarea name="" id="" cols="60" rows="4"></textarea>
+            </span>
+            </li>
+            <li>
+            <div class="add">确定</div>
+            </li>
+            </ul>
+        </div>
+</body>
+<script>
+    //查看文章／添加文章：
+    $(".title2 li").click(function(){
+        var index=$(this).index();
+        $(".title2 li").removeClass("active");
+        $(".title2 li").eq(index).addClass("active");
+        $(".chakan").hide();
+        $(".chakan").eq(index).show();
+    });
+</script>
+</html>
